@@ -1,0 +1,10 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Safety net: never commit real env files anywhere in the repo
+.env
+.env.local
+.env.*.local

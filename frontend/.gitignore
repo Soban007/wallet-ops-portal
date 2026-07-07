@@ -1,0 +1,7 @@
+node_modules
+.next
+out
+.env
+
+# next.js generated
+next-env.d.ts
