@@ -223,7 +223,7 @@ in-memory stand-ins for the repository and query runner.
 
 ### Concurrency integration test (real Postgres)
 
-The fast suite above proves the *logic*; this one proves it holds against an
+The fast suite above proves the _logic_; this one proves it holds against an
 actual database, by firing genuinely concurrent requests
 (`Promise.allSettled`, not sequential awaits) at a real Postgres row.
 
@@ -239,7 +239,7 @@ npm run test:concurrency
   once; exactly one is accepted, the other is rejected, and the final
   balance reflects only the winner — it never goes negative.
 - **Two requests, same `referenceId`, fired at once.** Both resolve, but to
-  the *same* transaction — the row lock plus the unique constraint mean the
+  the _same_ transaction — the row lock plus the unique constraint mean the
   operation is applied exactly once, and the loser replays the winner's
   result instead of erroring or double-charging.
 
